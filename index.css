@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+.top{
+    height: 40px;
+    text-align: center;
+    padding: 150px 0 200px 0;
+}
+
+
+.main{
+    background-color: #d8ebe9;
+    height: 1000px;
+}
+
+.photo1{
+    text-align: center;
+}
+
+.bokuasu{
+    margin-left: 100px;
+}
+
+.photo2{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.youzitu{
+    margin-left: 100px;
+}
+
+.photo3{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.tomodati{
+    margin-left: 100px;
+}
+
+/*背景フェード*/
+div.main_visual_area{
+    position:relative;
+    border:solid 2px #f3f4fa;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+    z-index:1;
+}
+div.mainvisual_blur{
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:#FFF;
+    z-index:-1;
+    opacity:0;
+}
+
+.list_item{
+    width: 0;
+    display: inline;
+}
+
+/*パララックス*/
+.z-index_test1 {
+    position:  fixed;                   /* 位置指定 */
+    width:  100%;                       /* 幅指定 */
+    box-sizing:  border-box;            /* 崩れ防止 */
+    z-index:  0;                        /* 重なり順指定 */
+    top: 0;                             /* 位置指定 */
+}
+.z-index_test {
+    
+    margin:  0 auto;                    /* 要素中央揃え */
+    
+    position:  relative;                /* 位置指定 */
+    z-index:  9999;                     /* 重なり順指定 */
+    margin-top: 265px;                  /* 位置指定 */
+    padding:  20px;                     /* 余白指定 */
+    box-sizing:  border-box;            /* 崩れ防止 */
+}
+
+
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  background:#d8ebe9;
+  text-align:center;
+  color:#fff;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+#container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+}
+
+a:hover{
+     text-decoration: none;   
+}

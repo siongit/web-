@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Aoyama Store</title>
+</head>
+<body>
+<div id="splash">
+    <div id="splash_text"></div>
+</div>
+
+    <div id="container">
+        <div class="z-index_test1">
+            <div class="main_visual_area">
+                <div class="top">
+                    <a href="index.html"><img class="storename" src="text.png" alt=""></a>
+                </div>
+            </div>
+            <div class="main">
+
+            </div>
+        </div>
+        
+
+        <div class="z-index_test">
+            <div class="photo1">
+                <div class="list_item">
+                    <a href="hyouka.html"><img src="hyouka.png" alt="ice.png"></a>
+                </div>
+
+                <div class="list_item">
+                    <a href="bokuasu.html"><img class="bokuasu" src="bokuasu2.png" alt="bokuasu.jfif"></a>
+                </div>
+            </div>
+            
+            <div class="photo2">
+                <div class="list_item">
+                    <a href="sao.html"><img src="sao.png" alt="sao.jpg"></a>
+                </div>
+
+                <div class="list_item">
+                    <a href="youzitu.html"><img class="youzitu" src="youzitu3.png" alt="youzitu.jpg"></a>
+                </div>
+            </div>
+
+            <div class="photo3">
+                <div class="list_item">
+                    <a href="supai.html"><img src="spy.png" alt="supai.png"></a>
+                </div>
+
+                <div class="list_item">
+                    <a href="tomodati.html"><img class="tomodati" src="tomodati2.png" alt="tomodati.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sample.js"></script>
+
+    <script src="sample.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 0) {
+                    $('.z-index_test').css('opacity', 0.5);
+                } else {
+                    $('.z-index_test').css('opacity', 1);
+                }
+            });
+        });
+        $(function() {
+ 
+            //画像にマウスを乗せたら発動
+            $('.list_item').hover(function() {
+
+                //画像のsrc属性が別画像のパスに切り替わる
+                $('.storename').stop().animate({opacity:"0"},500);
+
+            //ここにはマウスを離したときの動作を記述
+            }, function() {
+
+                //画像のsrc属性を元の画像のパスに戻す
+                $('.storename').stop().animate({opacity:"1"},500);
+
+            });
+        });
+    </script>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+<!--IE11用-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+<!--自作のJS-->
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-1/js/4-1-1.js"></script>
+</body>
+</html>
